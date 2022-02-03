@@ -1,65 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Vo Khuong Duy | Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- https://docs.iconify.design/icon-components/svg-framework/ -->
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  <!-- https://docs.iconify.design/icon-components/svg-framework/ -->
+  <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  <script src="js/index.js"></script>
 
-    <link rel="stylesheet" href="css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/index.css">
+
+  <title>Vo Khuong Duy | Home</title>
 </head>
 
 <body>
-    <nav>
-        <img id="logo" src="res/logo.svg" alt="My Logo">
+  <nav>
+    <span id="popout-menu-icon" class="nav-item iconify-inline" data-icon="dashicons:menu-alt3"
+      onclick="showResNavMenu()"></span>
 
-        <span id="menu_icon" data-icon="dashicons:menu-alt3"></span>
+    <img class="nav-item nav-logo" src="res/logo.svg" alt="My Logo">
 
-        <a class="menu_item" href="#">
-            <span class="item_icon" data-icon="mdi:account"></span> About
-        </a>
-        <a class="menu_item" href="#">
-            <span class="item_icon" data-icon="bx:bxs-user-detail"></span> Portfolio
-        </a>
-        <a class="menu_item" href="#">
-            <span class="item_icon" data-icon="bx:bx-at"></span> Contact
-        </a>
-    </nav>
+    <div id="resNavMenu" class="nav-item nav-menu">
 
-    <header id="profile">
-        <img id="avatar" src="res/avatar.JPG" alt="My Avatar">
+      <a href="#profile">
+        <span class="iconify-inline" data-icon="mdi:account"></span>
+        Profile
+      </a>
 
-        <h1 id="name">Vo Khuong Duy</h1>
+      <a href="#about">
+        <span class="iconify-inline" data-icon="bx:bxs-user-detail"></span>
+        About
+      </a>
 
-        <p id="oveview">Greetings, I’m Duy,<br>
-            I’m a Computer Science Undergrad,<br>
-            and I like to explore/collect hobbies</p>
+      <a href="contact.html">
+        <span class="iconify-inline" data-icon="bx:bx-at"></span>
+        Contact
+      </a>
+    </div>
+  </nav>
 
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/duyvo1801/" target="_blank">
-            <span class="contact_item" data-icon="akar-icons:linkedin-fill"></span>
-        </a>
+  <section id="profile">
+    <div id="profile-wrapper">
+      <div class="circle-img">
+        <img src="#" alt="My Avatar">
+      </div>
 
-        <!-- GitHub -->
-        <a href="https://github.com/vkduy19" target="_blank">
-            <span class="contact_item" data-icon="akar-icons:github-fill"></span>
-        </a>
+      <h1 id="name">Vo Khuong Duy</h1>
 
-        <!-- Gmail -->
-        <a href="#" target="_self">
-            <span class="contact_item" data-icon="mdi:gmail"></span>
-        </a>
-    </header>
+      <p id="overview">Greetings, I’m Duy.<br>
+        I’m a Computer Science Undergrad<br>
+        and I like to explore/collect hobbies.</p>
 
-    <section id="about">
-        <h3>Hello! Nice to meet you!</h3>
-        <p>My name is Vo Khuong Duy and I'm from Vietnam.<br><br>
-            I'm currently a Computer Science Undergraduate at University of Science - VNUHCM.<br><br>
-            In my freetime, I like to explore and collect new hobbies and interests. I also enjoy new experiences and
-            learning new things.
-        </p>
-    </section>
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/duyvo1801/" target="_blank">
+        <span class="contact-item iconify-inline" data-icon="akar-icons:linkedin-fill"></span>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/vkduy19" target="_blank">
+        <span class="contact-item iconify-inline" data-icon="akar-icons:github-fill"></span>
+      </a>
+
+      <!-- Gmail -->
+      <a href="#" target="_self">
+        <span class="contact-item iconify-inline" data-icon="mdi:gmail"></span>
+      </a>
+
+    </div>
+  </section>
+
+  <section id="about">
+    <h3 id="greetings">Hello! Nice to meet you!</h3>
+    <p id="about-me">My name is Vo Khuong Duy, I'm from Vietnam.<br><br>
+      I'm currently a Computer Science Undergraduate at University of Science - VNUHCM.<br><br>
+      In my freetime, I like to explore and collect new hobbies and interests.<br>
+      I also enjoy new experiences and learning new things.
+    </p>
+  </section>
+
+  <footer>
+    
+  </footer>
 </body>
 
 </html>
