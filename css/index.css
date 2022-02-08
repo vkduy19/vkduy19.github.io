@@ -2,18 +2,15 @@
     Global
    ================ */
 :root {
-  --clr-primary: #FBF2D8;
-  --clr-primary-accent: #52667A;
+  --clr-white: #fff;
+  --clr-beige: #FBF2D8;
+  --clr-blue: #52667A;
+  --clr-bluedark: #252229;
+  --clr-black: #000;
 
-  --clr-secondary: #342E3F;
-  --clr-secondary-accent: #FFB291;
-
-  --clr-basic-primary: #fff;
-  --clr-basic-primary-accent: #000;
-
-  --fnt-primary: 'Roboto', sans-serif;
-  --fnt-accent: 'Roboto Slab', serif;
-
+  --ff-primary: 'Roboto', sans-serif;
+  --ff-accent: 'Roboto Slab', serif;
+  
   font-size: 16px;
 }
 
@@ -23,14 +20,12 @@ body {
   margin: 0;
   height: 100vh;
   width: 100vw;
-  background-color: var(--clr-secondary);
-  color: var(--clr-primary);
+  background-color: var(--clr-bluedark);
+  color: var(--clr-beige);
 }
 
-body a,
-.iconify-inline {
+body a {
   text-decoration: none;
-  color: var(--clr-primary);
 }
 
 /* ================
@@ -42,8 +37,8 @@ nav {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: var(--clr-primary-accent);
-  color: var(--clr-primary);
+  background-color: var(--clr-blue);
+  color: var(--clr-beige);
 }
 
 .nav-item {
@@ -69,27 +64,30 @@ nav {
   display: none;
 } */
 
-.nav-menu {
+#resNavMenu {
+  width: 10rem;
+  height: 100vh;
+
+  color: var(--clr-bluedark);
+  background-color: var(--clr-beige);
+}
+
+#resNavMenu a {
   display: block;
-  width: 100%;
-  height: 100%;
-}
+  text-align: left;
 
-.nav-menu a {
-  text-align: center;
-
+  color: var(--clr-bluedark);
+  font-family: var(--ff-primary);
   font-size: 1.5rem;
-  color: var(--clr-primary);
 
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 0.7rem;
   margin: 0;
-  position: sticky;
-  top: 50%;
 }
 
-.nav-menu a:hover {
-  background-color: var(--clr-primary);
-  color: var(--clr-primary-accent);
+#resNavMenu a:hover,
+#resNavMenu a:active {
+  background-color: var(--clr-bluedark);
+  color: var(--clr-beige);
 }
 
 /* ================
@@ -113,12 +111,12 @@ nav {
 }
 
 #name {
-  font-family: var(--fnt-primary);
+  font-family: var(--ff-primary);
   font-size: 2rem;
 }
 
 #overview {
-  font-family: var(--fnt-accent);
+  font-family: var(--ff-accent);
   font-size: 1.1rem;
   line-height: 1.5em;
 }
@@ -126,6 +124,7 @@ nav {
 .contact-item {
   font-size: 1.7rem;
   margin: 1.5rem 1.4rem;
+  color: var(--clr-beige);
 }
 
 /* ================
@@ -136,19 +135,19 @@ nav {
   height: calc(100% - 3.5rem);
   margin: 0;
   padding: 1rem 1.1rem;
-  background-color: var(--clr-basic-primary);
-  color: var(--clr-secondary);
+  background-color: var(--clr-white);
+  color: var(--clr-black);
 }
 
 #greetings {
-  font-family: var(--fnt-primary);
+  font-family: var(--ff-primary);
   font-size: 1.15rem;
   font-weight: 900;
   margin-bottom: 1.7em;
 }
 
 #about-me {
-  font-family: var(--fnt-accent);
+  font-family: var(--ff-accent);
   font-size: 1.05rem;
   font-weight: 500;
   line-height: 1.3em;
